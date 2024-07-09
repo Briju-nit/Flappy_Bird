@@ -1,0 +1,81 @@
+* {
+  font-family: "Bungee Spice", sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #70c5ce, #ffffff);
+}
+
+button {
+  background-color: grey;
+  font-size: 15px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 3px solid white;
+}
+
+#gameContainer {
+  position: relative;
+}
+
+#board {
+  background-image: url("assets/background.png");
+  background-size: cover;
+  border: 10px solid goldenrod;
+}
+
+#scoreboard {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+#gameOver {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+#startText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeInOut {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
