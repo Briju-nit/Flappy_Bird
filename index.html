@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLAPPY BIRD</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="gameContainer">
+    <canvas id="board"></canvas>
+    <div id="scoreboard"><span>Score: 0</span><span> </span><span>|</span><span> </span><span>High Score: 0</span></div>
+    <div id="gameOver" class="hidden">
+      <p>GAME OVER</p>
+      <p id="finalScore"></p>
+      <button onclick="retryGame()">RESTART</button>
+    </div>
+    <div id="startText">
+      <p>START THE GAME</p>
+      <button onclick="startGame()">Start</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

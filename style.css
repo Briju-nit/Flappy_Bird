@@ -1,0 +1,89 @@
+* {
+  font-family: "Bungee Spice", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #70c5ce, #ffffff);
+}
+
+#gameContainer {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#board {
+  background-image: url("assets/background.png");
+  background-size: cover;
+  border: 10px solid goldenrod;
+  width: 100%;
+}
+
+#scoreboard {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  /* Adjust font size for responsiveness */
+  z-index: 1;
+  /* Ensure scoreboard appears above the game elements */
+}
+
+#gameOver,
+#startText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10;
+  /* Ensure game pop-up appears above all other elements */
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: grey;
+  font-size: 0.8rem;
+  /* Adjust font size for responsiveness */
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 3px solid white;
+}
+
+@media (max-width: 700px) {
+
+  /* Adjust styles for mobile devices */
+  #scoreboard {
+    font-size: 0.5rem;
+    padding: 8px;
+    right: 10px;
+    top: 10px;
+  }
+
+  #gameOver,
+  #startText {
+    padding: 15px;
+    font-size: 0.5rem;
+  }
+
+  button {
+    font-size: 0.4rem;
+    padding: 10px 20px;
+  }
+}
