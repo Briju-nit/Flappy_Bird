@@ -1,4 +1,5 @@
 Flappy Bird Game
+
 Game Overview:
 Flappy Bird is a side-scrolling mobile game where the player controls a bird, attempting to fly between columns of green pipes without hitting them. The player earns points by successfully navigating the bird through the openings between the pipes. The game is known for its simplicity yet challenging gameplay, which requires precise timing and coordination.
 
